@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    font-family: 'Holtwood One SC', serif;
+}
+
+.bg {
+    background-image: url("https://image.freepik.com/free-vector/western-saloon-background_1308-29053.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-text {
+    background-color: hsl(19deg 54% 7% / 55%);
+    color: hsl(37deg 94% 87%);
+    font-weight: bold;
+    border: 3px solid hsl(37deg 94% 87%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-btn {
+    background-color: hsl(37deg 94% 87%);
+    color: hsl(19deg 54% 7% / 55%);
+}
