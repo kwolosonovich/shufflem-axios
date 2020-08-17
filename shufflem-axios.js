@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let draw = $("#draw");
     let cards = $("#cards");
 
+    draw.on('click', drawCard)
+
     async function drawCard() {
         try {
             let res = await axios.get(`${baseAPI}/new/draw/?count=1`);
@@ -13,6 +15,5 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Sorry, an error has occured");
         }
     }
-
-drawCard();
+    
 });
